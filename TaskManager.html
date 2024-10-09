@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="Task.Manager.css" />
+    <script defer src="TaskManager.js"></script>
+    <link rel="stylesheet" href="Task.Manager.css"> 
+</head>
+<body>
+    <div class="container">
+        <h3>Task Manager</h3>
+    
+        <form>
+            
+            <p class="err">Pease Enter a Task</p>
+            <input type="text" id="input-task" placeholder="Enter a Task" />
+            <button id="add-task">Add Task</button>
+            <input id="Search-input" type="text" placeholder="Search a Task" />
+            <ul class="task-list">
+                <li class="task">
+                    <input type="text" value="Build some projects" enable /> <button>Edit</button><button>Delete</button></li>
+            </ul>
+            
+            <button class="clear-all">Clear all tasks</button>
+            <div class="container">
+                <h1>Task List</h1>
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <input type="text" id="descriptionInput" placeholder="Task description...">
+                <input type="date" id="dueDateInput">
+                <button id="addTaskBtn">Add Task</button>
+                <ul id="taskList"></ul>
+            </div>
+        </form>
+    </div>
+    <script src="TaskManager.js"></script>
+</body>
+</html>
